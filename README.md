@@ -72,7 +72,7 @@ BEGIN
     DBMS_SCHEDULER.CREATE_JOB (
         job_name            => L_JOBNAME,
         job_type            => 'STORED_PROCEDURE',
-        job_action          => 'ATT_FASTER_daily_process',
+        job_action          => 'ATTENDANCE_DAILY_PROCESS',
         number_of_arguments => 3,
         enabled             => FALSE
     );
